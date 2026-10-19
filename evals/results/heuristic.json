@@ -1,0 +1,338 @@
+{
+  "synthetic": true,
+  "backend": "heuristic",
+  "model": null,
+  "prompt_versions": {
+    "analysis": "rules-v1",
+    "coaching": "rules-v1"
+  },
+  "created_at": "2026-10-19T00:00:55+00:00",
+  "transcripts": 20,
+  "samples": 3,
+  "seconds": 0.3,
+  "usage": {},
+  "errors": [],
+  "metrics": {
+    "grounding": {
+      "analysis_quotes": 531,
+      "analysis_rate": 1.0,
+      "coaching_quotes_first_pass": 67,
+      "coaching_first_pass_rate": 1.0,
+      "coaching_quotes_final": 67,
+      "coaching_final_rate": 1.0,
+      "notes_repaired": 0,
+      "items_dropped": 0,
+      "first_pass_failures": []
+    },
+    "golden": {
+      "transcripts": 10,
+      "discovery_precision": 0.9444,
+      "discovery_recall": 0.8293,
+      "discovery_f1": 0.8831,
+      "objection_precision": 0.68,
+      "objection_recall": 0.8095,
+      "objection_f1": 0.7391,
+      "category_accuracy": 0.9412,
+      "handling_accuracy": 0.5882,
+      "next_step_accuracy": 1.0,
+      "score_mae": 6.3
+    },
+    "consistency": {
+      "runs_per_transcript": 3,
+      "transcripts": 20,
+      "score_sd_mean": 0.0,
+      "score_range_max": 0,
+      "next_step_agreement": 1.0,
+      "discovery_count_sd_mean": 0.0,
+      "objection_count_sd_mean": 0.0
+    },
+    "coaching": {
+      "notes": 20,
+      "complete": 20,
+      "complete_rate": 1.0
+    }
+  },
+  "golden_details": {
+    "T01": {
+      "score": 95,
+      "golden_score": 100,
+      "discovery": {
+        "missed": [
+          7,
+          17,
+          19
+        ],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [
+          18
+        ],
+        "extra": [
+          6
+        ],
+        "handling_misses": []
+      },
+      "next_step": {
+        "predicted": "clear",
+        "gold": "clear"
+      }
+    },
+    "T03": {
+      "score": 87,
+      "golden_score": 95,
+      "discovery": {
+        "missed": [
+          9
+        ],
+        "extra": [
+          21
+        ],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [],
+        "extra": [
+          10
+        ],
+        "handling_misses": []
+      },
+      "next_step": {
+        "predicted": "clear",
+        "gold": "clear"
+      }
+    },
+    "T05": {
+      "score": 95,
+      "golden_score": 100,
+      "discovery": {
+        "missed": [
+          15
+        ],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [
+          12
+        ],
+        "extra": [
+          8
+        ],
+        "handling_misses": [
+          {
+            "turn": 20,
+            "predicted": "adequate",
+            "gold": "strong"
+          }
+        ]
+      },
+      "next_step": {
+        "predicted": "clear",
+        "gold": "clear"
+      }
+    },
+    "T07": {
+      "score": 81,
+      "golden_score": 94,
+      "discovery": {
+        "missed": [
+          5
+        ],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [],
+        "extra": [
+          2
+        ],
+        "handling_misses": [
+          {
+            "turn": 6,
+            "predicted": "weak",
+            "gold": "strong"
+          }
+        ]
+      },
+      "next_step": {
+        "predicted": "clear",
+        "gold": "clear"
+      }
+    },
+    "T09": {
+      "score": 62,
+      "golden_score": 67,
+      "discovery": {
+        "missed": [],
+        "extra": [
+          1
+        ],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [],
+        "extra": [
+          12
+        ],
+        "handling_misses": [
+          {
+            "turn": 4,
+            "predicted": "weak",
+            "gold": "adequate"
+          },
+          {
+            "turn": 10,
+            "predicted": "unaddressed",
+            "gold": "adequate"
+          },
+          {
+            "turn": 14,
+            "predicted": "weak",
+            "gold": "adequate"
+          }
+        ]
+      },
+      "next_step": {
+        "predicted": "clear",
+        "gold": "clear"
+      }
+    },
+    "T11": {
+      "score": 57,
+      "golden_score": 65,
+      "discovery": {
+        "missed": [
+          7
+        ],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [
+          14
+        ],
+        "extra": [
+          4,
+          6
+        ],
+        "handling_misses": []
+      },
+      "next_step": {
+        "predicted": "vague",
+        "gold": "vague"
+      }
+    },
+    "T13": {
+      "score": 20,
+      "golden_score": 20,
+      "discovery": {
+        "missed": [],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [],
+        "extra": [],
+        "handling_misses": []
+      },
+      "next_step": {
+        "predicted": "vague",
+        "gold": "vague"
+      }
+    },
+    "T15": {
+      "score": 37,
+      "golden_score": 35,
+      "discovery": {
+        "missed": [],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [
+          2
+        ],
+        "extra": [],
+        "handling_misses": []
+      },
+      "next_step": {
+        "predicted": "vague",
+        "gold": "vague"
+      }
+    },
+    "T17": {
+      "score": 24,
+      "golden_score": 17,
+      "discovery": {
+        "missed": [],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [],
+        "extra": [
+          10
+        ],
+        "handling_misses": [
+          {
+            "turn": 8,
+            "predicted": "weak",
+            "gold": "unaddressed"
+          }
+        ]
+      },
+      "next_step": {
+        "predicted": "none",
+        "gold": "none"
+      }
+    },
+    "T19": {
+      "score": 48,
+      "golden_score": 38,
+      "discovery": {
+        "missed": [],
+        "extra": [],
+        "ungrounded": 0
+      },
+      "objections": {
+        "missed": [],
+        "extra": [],
+        "handling_misses": [
+          {
+            "turn": 6,
+            "predicted": "adequate",
+            "gold": "unaddressed"
+          }
+        ]
+      },
+      "next_step": {
+        "predicted": "vague",
+        "gold": "vague"
+      }
+    }
+  },
+  "scores": {
+    "T01": 95,
+    "T02": 86,
+    "T03": 87,
+    "T04": 94,
+    "T05": 95,
+    "T06": 89,
+    "T07": 81,
+    "T08": 92,
+    "T09": 62,
+    "T10": 53,
+    "T11": 57,
+    "T12": 72,
+    "T13": 20,
+    "T14": 13,
+    "T15": 37,
+    "T16": 23,
+    "T17": 24,
+    "T18": 28,
+    "T19": 48,
+    "T20": 71
+  }
+}

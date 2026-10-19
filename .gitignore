@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# Local config and secrets
+.env
+
+# Claude response cache (keyed by model + prompt hash + transcript + sample)
+.cache/
+
+# Unaccepted eval runs; `fieldcoach accept` promotes them into the tracked files
+evals/results/latest-*.json
+data/runs/latest-*.json

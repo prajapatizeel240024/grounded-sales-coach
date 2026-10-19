@@ -1,0 +1,14 @@
+.git
+.env
+.cache
+.venv
+venv
+**/__pycache__
+.pytest_cache
+*.egg-info
+build
+dist
+tests
+docs
+evals/results/latest-*.json
+data/runs/latest-*.json

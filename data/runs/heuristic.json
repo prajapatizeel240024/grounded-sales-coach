@@ -1,0 +1,5599 @@
+{
+ "synthetic": true,
+ "run_id": "heuristic-20261019T000055Z-600a0c",
+ "backend": "heuristic",
+ "model": null,
+ "prompt_versions": {
+  "analysis": "rules-v1",
+  "coaching": "rules-v1"
+ },
+ "created_at": "2026-10-19T00:00:55Z",
+ "meetings": [
+  {
+   "transcript_id": "T01",
+   "rep_id": "R1",
+   "rep_name": "Maya Chen",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "When a parent walks in with a kid who has a sore throat, what usually happens today?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "How often does that happen in a typical week this time of year?",
+      "kind": "impact",
+      "open_ended": true
+     },
+     {
+      "turn": 9,
+      "quote": "What would it mean for you if you could run that test right here and hand them a result in about ten minutes?",
+      "kind": "need_payoff",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "What does a Saturday look like for you, hour by hour?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 23,
+      "quote": "Who else should be part of the decision?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 6,
+      "quote": "We get a lot of teachers from the middle school down the road, and they can't take a whole afternoon off to sit in urgent care.",
+      "category": "other",
+      "response_turn": 7,
+      "response_quote": "And when they go to urgent care, what does that cost you?",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 12,
+      "quote": "It sounds good, but I'm worried about the time.",
+      "category": "workflow_staffing",
+      "response_turn": 13,
+      "response_quote": "That's a fair worry, and Saturdays are exactly when the sick kids show up.",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 25,
+     "quote": "I'll email you and your wife the agreement and the break-even sheet today, and I'll come back Thursday the 17th at 2 p.m.",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 5 discovery questions, 2 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "When a parent walks in with a kid who has a sore throat, what usually happens today?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "How often does that happen in a typical week this time of year?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "What would it mean for you if you could run that test right here and hand them a result in about ten minutes?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "What does a Saturday look like for you, hour by hour?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "Who else should be part of the decision?",
+     "expected_speaker": "rep",
+     "claimed_turn": 23,
+     "found_turn": 23,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "We get a lot of teachers from the middle school down the road, and they can't take a whole afternoon off to sit in urgent care.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "And when they go to urgent care, what does that cost you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "It sounds good, but I'm worried about the time.",
+     "expected_speaker": "customer",
+     "claimed_turn": 12,
+     "found_turn": 12,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "That's a fair worry, and Saturdays are exactly when the sick kids show up.",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll email you and your wife the agreement and the break-even sheet today, and I'll come back Thursday the 17th at 2 p.m.",
+     "expected_speaker": null,
+     "claimed_turn": 25,
+     "found_turn": 25,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 429,
+    "customer_words": 545,
+    "rep_share": 0.4405,
+    "longest_rep_turn": 21,
+    "longest_rep_turn_words": 77
+   },
+   "discovery_turns": [
+    3,
+    5,
+    9,
+    13,
+    23
+   ],
+   "objections": [
+    {
+     "turn": 6,
+     "quote": "We get a lot of teachers from the middle school down the road, and they can't take a whole afternoon off to sit in urgent care.",
+     "category": "other",
+     "handling": "adequate",
+     "response_turn": 7,
+     "response_quote": "And when they go to urgent care, what does that cost you?"
+    },
+    {
+     "turn": 12,
+     "quote": "It sounds good, but I'm worried about the time.",
+     "category": "workflow_staffing",
+     "handling": "strong",
+     "response_turn": 13,
+     "response_quote": "That's a fair worry, and Saturdays are exactly when the sick kids show up."
+    }
+   ],
+   "next_step": "clear",
+   "score": 95,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 25.0
+   }
+  },
+  {
+   "transcript_id": "T02",
+   "rep_id": "R1",
+   "rep_name": "Maya Chen",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "How are home blood pressure monitors selling for you right now?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "When someone puts it back, what do you think is going on for them?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 9,
+      "quote": "How do you use home readings in those conversations today?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "Which items on that blood pressure shelf actually move?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 17,
+      "quote": "What would make you comfortable trying it?",
+      "kind": "need_payoff",
+      "open_ended": true
+     },
+     {
+      "turn": 19,
+      "quote": "What happened last time, if you don't mind me asking?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 23,
+      "quote": "Who else would weigh in on the order?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 6,
+      "quote": "Their doctor tells them to check their pressure at home, they come here, and sixty dollars feels like a lot for something they're not sure they'll use.",
+      "category": "cost_margin",
+      "response_turn": 7,
+      "response_quote": "And what happens with those customers after they walk away from the shelf?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 10,
+      "quote": "Feeling fine is the whole problem.",
+      "category": "other",
+      "response_turn": 11,
+      "response_quote": "It's an upper-arm monitor that stores readings for two people, it retails at forty-four ninety-nine, and your cost is twenty-two dollars, so you make more per unit than on the national brand while charging fifteen dollars less.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 12,
+      "quote": "My problem is space.",
+      "category": "inventory_space",
+      "response_turn": 13,
+      "response_quote": "Front-store space is the scarcest thing you've got.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 18,
+      "quote": "I've been burned with front-store products before.",
+      "category": "workflow_staffing",
+      "response_turn": 19,
+      "response_quote": "What happened last time, if you don't mind me asking?",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 25,
+     "quote": "I'll put in a one-case order for this store today on sale-or-return, and I'll come back Tuesday the 6th at ten to set up the display and plan a check day with you for later that month.",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 7 discovery questions, 4 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How are home blood pressure monitors selling for you right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "When someone puts it back, what do you think is going on for them?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "How do you use home readings in those conversations today?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "Which items on that blood pressure shelf actually move?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "What would make you comfortable trying it?",
+     "expected_speaker": "rep",
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[5]",
+     "quote": "What happened last time, if you don't mind me asking?",
+     "expected_speaker": "rep",
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[6]",
+     "quote": "Who else would weigh in on the order?",
+     "expected_speaker": "rep",
+     "claimed_turn": 23,
+     "found_turn": 23,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "Their doctor tells them to check their pressure at home, they come here, and sixty dollars feels like a lot for something they're not sure they'll use.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "And what happens with those customers after they walk away from the shelf?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "Feeling fine is the whole problem.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "It's an upper-arm monitor that stores readings for two people, it retails at forty-four ninety-nine, and your cost is twenty-two dollars, so you make more per unit than on the national brand while charging fifteen dollars less.",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "My problem is space.",
+     "expected_speaker": "customer",
+     "claimed_turn": 12,
+     "found_turn": 12,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "Front-store space is the scarcest thing you've got.",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[3].quote",
+     "quote": "I've been burned with front-store products before.",
+     "expected_speaker": "customer",
+     "claimed_turn": 18,
+     "found_turn": 18,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[3].response_quote",
+     "quote": "What happened last time, if you don't mind me asking?",
+     "expected_speaker": "rep",
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll put in a one-case order for this store today on sale-or-return, and I'll come back Tuesday the 6th at ten to set up the display and plan a check day with you for later that month.",
+     "expected_speaker": null,
+     "claimed_turn": 25,
+     "found_turn": 25,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 382,
+    "customer_words": 437,
+    "rep_share": 0.4664,
+    "longest_rep_turn": 21,
+    "longest_rep_turn_words": 73
+   },
+   "discovery_turns": [
+    3,
+    5,
+    9,
+    13,
+    17,
+    19,
+    23
+   ],
+   "objections": [
+    {
+     "turn": 6,
+     "quote": "Their doctor tells them to check their pressure at home, they come here, and sixty dollars feels like a lot for something they're not sure they'll use.",
+     "category": "cost_margin",
+     "handling": "weak",
+     "response_turn": 7,
+     "response_quote": "And what happens with those customers after they walk away from the shelf?"
+    },
+    {
+     "turn": 10,
+     "quote": "Feeling fine is the whole problem.",
+     "category": "other",
+     "handling": "adequate",
+     "response_turn": 11,
+     "response_quote": "It's an upper-arm monitor that stores readings for two people, it retails at forty-four ninety-nine, and your cost is twenty-two dollars, so you make more per unit than on the national brand while charging fifteen dollars less."
+    },
+    {
+     "turn": 12,
+     "quote": "My problem is space.",
+     "category": "inventory_space",
+     "handling": "weak",
+     "response_turn": 13,
+     "response_quote": "Front-store space is the scarcest thing you've got."
+    },
+    {
+     "turn": 18,
+     "quote": "I've been burned with front-store products before.",
+     "category": "workflow_staffing",
+     "handling": "strong",
+     "response_turn": 19,
+     "response_quote": "What happened last time, if you don't mind me asking?"
+    }
+   ],
+   "next_step": "clear",
+   "score": 86,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 16.3
+   }
+  },
+  {
+   "transcript_id": "T03",
+   "rep_id": "R1",
+   "rep_name": "Maya Chen",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "What's on that list?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "What clinical services are you running today besides vaccines?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 7,
+      "quote": "What made it fizzle?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 15,
+      "quote": "Who else besides legal weighs in on a decision like this?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 17,
+      "quote": "What do you like about the house brand, and what's missing?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 21,
+      "quote": "Is Wednesday the 7th at nine open for both of you?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 10,
+      "quote": "If she can't see it on a weekly report, it didn't happen.",
+      "category": "other",
+      "response_turn": null,
+      "response_quote": null,
+      "handling": "unaddressed",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 12,
+      "quote": "But corporate legal is nervous about liability.",
+      "category": "regulatory_liability",
+      "response_turn": 13,
+      "response_quote": "The tests are CLIA-waived, and the protocol we provide has a clear rule: any patient with a negative result who still has symptoms gets referred to a provider the same day, and the documentation template records that the referral was made.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 16,
+      "quote": "And purchasing will push back, because we already have a deal with our wholesaler's house-brand strep test.",
+      "category": "incumbent_competitor",
+      "response_turn": 17,
+      "response_quote": "What do you like about the house brand, and what's missing?",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 21,
+     "quote": "Is Wednesday the 7th at nine open for both of you?",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 6 discovery questions, 3 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "What's on that list?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "What clinical services are you running today besides vaccines?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "What made it fizzle?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "Who else besides legal weighs in on a decision like this?",
+     "expected_speaker": "rep",
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "What do you like about the house brand, and what's missing?",
+     "expected_speaker": "rep",
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[5]",
+     "quote": "Is Wednesday the 7th at nine open for both of you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 21,
+     "found_turn": 21,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "If she can't see it on a weekly report, it didn't happen.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "But corporate legal is nervous about liability.",
+     "expected_speaker": "customer",
+     "claimed_turn": 12,
+     "found_turn": 12,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "The tests are CLIA-waived, and the protocol we provide has a clear rule: any patient with a negative result who still has symptoms gets referred to a provider the same day, and the documentation template records that the referral was made.",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "And purchasing will push back, because we already have a deal with our wholesaler's house-brand strep test.",
+     "expected_speaker": "customer",
+     "claimed_turn": 16,
+     "found_turn": 16,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "What do you like about the house brand, and what's missing?",
+     "expected_speaker": "rep",
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "Is Wednesday the 7th at nine open for both of you?",
+     "expected_speaker": null,
+     "claimed_turn": 21,
+     "found_turn": 21,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 348,
+    "customer_words": 362,
+    "rep_share": 0.4901,
+    "longest_rep_turn": 19,
+    "longest_rep_turn_words": 91
+   },
+   "discovery_turns": [
+    3,
+    5,
+    7,
+    15,
+    17,
+    21
+   ],
+   "objections": [
+    {
+     "turn": 10,
+     "quote": "If she can't see it on a weekly report, it didn't happen.",
+     "category": "other",
+     "handling": "unaddressed",
+     "response_turn": null,
+     "response_quote": null
+    },
+    {
+     "turn": 12,
+     "quote": "But corporate legal is nervous about liability.",
+     "category": "regulatory_liability",
+     "handling": "adequate",
+     "response_turn": 13,
+     "response_quote": "The tests are CLIA-waived, and the protocol we provide has a clear rule: any patient with a negative result who still has symptoms gets referred to a provider the same day, and the documentation template records that the referral was made."
+    },
+    {
+     "turn": 16,
+     "quote": "And purchasing will push back, because we already have a deal with our wholesaler's house-brand strep test.",
+     "category": "incumbent_competitor",
+     "handling": "strong",
+     "response_turn": 17,
+     "response_quote": "What do you like about the house brand, and what's missing?"
+    }
+   ],
+   "next_step": "clear",
+   "score": 87,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 16.7
+   }
+  },
+  {
+   "transcript_id": "T04",
+   "rep_id": "R1",
+   "rep_name": "Maya Chen",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "What did you learn from the people who came in?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "How did your team handle those requests?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 11,
+      "quote": "What's your biggest concern about getting started?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "Which of your team would you want trained first?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 12,
+      "quote": "If I pile something else on now, I'm worried one of them quits.",
+      "category": "other",
+      "response_turn": 13,
+      "response_quote": "Which of your team would you want trained first?",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 17,
+     "quote": "I'll bring the pre-filled packet on Friday the 9th at eleven, we can sign it together, and I'll book the in-store training for the week after it's approved.",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 4 discovery questions, 1 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "What did you learn from the people who came in?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "How did your team handle those requests?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "What's your biggest concern about getting started?",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "Which of your team would you want trained first?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "If I pile something else on now, I'm worried one of them quits.",
+     "expected_speaker": "customer",
+     "claimed_turn": 12,
+     "found_turn": 12,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Which of your team would you want trained first?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll bring the pre-filled packet on Friday the 9th at eleven, we can sign it together, and I'll book the in-store training for the week after it's approved.",
+     "expected_speaker": null,
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 282,
+    "customer_words": 288,
+    "rep_share": 0.4947,
+    "longest_rep_turn": 9,
+    "longest_rep_turn_words": 56
+   },
+   "discovery_turns": [
+    3,
+    5,
+    11,
+    13
+   ],
+   "objections": [
+    {
+     "turn": 12,
+     "quote": "If I pile something else on now, I'm worried one of them quits.",
+     "category": "other",
+     "handling": "strong",
+     "response_turn": 13,
+     "response_quote": "Which of your team would you want trained first?"
+    }
+   ],
+   "next_step": "clear",
+   "score": 94,
+   "score_parts": {
+    "discovery": 24.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 30.0
+   }
+  },
+  {
+   "transcript_id": "T05",
+   "rep_id": "R2",
+   "rep_name": "Daniel Okafor",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "What's changed most in your business over the last year?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "Where are you looking to make it up?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 7,
+      "quote": "How do you decide whether a new service is worth it?",
+      "kind": "need_payoff",
+      "open_ended": true
+     },
+     {
+      "turn": 9,
+      "quote": "When you think about your counter on a busy day, what usually breaks first?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "When someone with a sore throat goes to urgent care around here, how long do they usually wait?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 19,
+      "quote": "What else would stop you from moving forward?",
+      "kind": "problem",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 8,
+      "quote": "It has to pay for the staff time inside a month or two, and it can't mess up my workflow at the counter.",
+      "category": "cost_margin",
+      "response_turn": 9,
+      "response_quote": "When you think about your counter on a busy day, what usually breaks first?",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 20,
+      "quote": "The minimum order.",
+      "category": "inventory_space",
+      "response_turn": 21,
+      "response_quote": "The kits are stored at room temperature, not in the fridge, and they're good for eighteen months.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 23,
+     "quote": "Then let's meet next Tuesday, the 22nd, at 1:30, after your lunch rush, to sign the CLIA packet and pick a training date.",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 6 discovery questions, 2 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "What's changed most in your business over the last year?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Where are you looking to make it up?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "How do you decide whether a new service is worth it?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "When you think about your counter on a busy day, what usually breaks first?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "When someone with a sore throat goes to urgent care around here, how long do they usually wait?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[5]",
+     "quote": "What else would stop you from moving forward?",
+     "expected_speaker": "rep",
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "It has to pay for the staff time inside a month or two, and it can't mess up my workflow at the counter.",
+     "expected_speaker": "customer",
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "When you think about your counter on a busy day, what usually breaks first?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "The minimum order.",
+     "expected_speaker": "customer",
+     "claimed_turn": 20,
+     "found_turn": 20,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "The kits are stored at room temperature, not in the fridge, and they're good for eighteen months.",
+     "expected_speaker": "rep",
+     "claimed_turn": 21,
+     "found_turn": 21,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "Then let's meet next Tuesday, the 22nd, at 1:30, after your lunch rush, to sign the CLIA packet and pick a training date.",
+     "expected_speaker": null,
+     "claimed_turn": 23,
+     "found_turn": 23,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 351,
+    "customer_words": 348,
+    "rep_share": 0.5021,
+    "longest_rep_turn": 17,
+    "longest_rep_turn_words": 60
+   },
+   "discovery_turns": [
+    3,
+    5,
+    7,
+    9,
+    13,
+    19
+   ],
+   "objections": [
+    {
+     "turn": 8,
+     "quote": "It has to pay for the staff time inside a month or two, and it can't mess up my workflow at the counter.",
+     "category": "cost_margin",
+     "handling": "strong",
+     "response_turn": 9,
+     "response_quote": "When you think about your counter on a busy day, what usually breaks first?"
+    },
+    {
+     "turn": 20,
+     "quote": "The minimum order.",
+     "category": "inventory_space",
+     "handling": "adequate",
+     "response_turn": 21,
+     "response_quote": "The kits are stored at room temperature, not in the fridge, and they're good for eighteen months."
+    }
+   ],
+   "next_step": "clear",
+   "score": 95,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 25.0
+   }
+  },
+  {
+   "transcript_id": "T06",
+   "rep_id": "R2",
+   "rep_name": "Daniel Okafor",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "How much of your business comes from the front store these days?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "Which categories are still holding up for you?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 7,
+      "quote": "Where do blood pressure monitors fall in that?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 9,
+      "quote": "What do you think is getting in the way?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "When a customer asks you which monitor to buy, what do you tell them today?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 17,
+      "quote": "What would you need to see to give it a try?",
+      "kind": "need_payoff",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 4,
+      "quote": "We can't compete on price there, so I stopped trying.",
+      "category": "cost_margin",
+      "response_turn": 5,
+      "response_quote": "Which categories are still holding up for you?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 12,
+      "quote": "Honestly, I don't know if my customers will trust a brand they've never heard of.",
+      "category": "incumbent_competitor",
+      "response_turn": 13,
+      "response_quote": "When a customer asks you which monitor to buy, what do you tell them today?",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 21,
+     "quote": "I'll place the order today so it ships with your Thursday wholesaler delivery, and I'll stop by Thursday the 1st at three to set up the counter display and leave a validation sheet for your staff.",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 6 discovery questions, 2 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How much of your business comes from the front store these days?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Which categories are still holding up for you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "Where do blood pressure monitors fall in that?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "What do you think is getting in the way?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "When a customer asks you which monitor to buy, what do you tell them today?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[5]",
+     "quote": "What would you need to see to give it a try?",
+     "expected_speaker": "rep",
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "We can't compete on price there, so I stopped trying.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Which categories are still holding up for you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "Honestly, I don't know if my customers will trust a brand they've never heard of.",
+     "expected_speaker": "customer",
+     "claimed_turn": 12,
+     "found_turn": 12,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "When a customer asks you which monitor to buy, what do you tell them today?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll place the order today so it ships with your Thursday wholesaler delivery, and I'll stop by Thursday the 1st at three to set up the counter display and leave a validation sheet for your staff.",
+     "expected_speaker": null,
+     "claimed_turn": 21,
+     "found_turn": 21,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 296,
+    "customer_words": 287,
+    "rep_share": 0.5077,
+    "longest_rep_turn": 15,
+    "longest_rep_turn_words": 56
+   },
+   "discovery_turns": [
+    3,
+    5,
+    7,
+    9,
+    13,
+    17
+   ],
+   "objections": [
+    {
+     "turn": 4,
+     "quote": "We can't compete on price there, so I stopped trying.",
+     "category": "cost_margin",
+     "handling": "weak",
+     "response_turn": 5,
+     "response_quote": "Which categories are still holding up for you?"
+    },
+    {
+     "turn": 12,
+     "quote": "Honestly, I don't know if my customers will trust a brand they've never heard of.",
+     "category": "incumbent_competitor",
+     "handling": "strong",
+     "response_turn": 13,
+     "response_quote": "When a customer asks you which monitor to buy, what do you tell them today?"
+    }
+   ],
+   "next_step": "clear",
+   "score": 89,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 18.8
+   }
+  },
+  {
+   "transcript_id": "T07",
+   "rep_id": "R2",
+   "rep_name": "Daniel Okafor",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 1,
+      "quote": "How are clinical services going at this store?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 3,
+      "quote": "What other programs has corporate added this year?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 7,
+      "quote": "Which part of the day is hardest for your pharmacists right now?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 11,
+      "quote": "What does corporate look at when they decide whether a store gets a new service?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "Do you have a sense of how much sick traffic you see in a week?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 2,
+      "quote": "Last season we did almost two thousand, which is a lot for a store our size.",
+      "category": "other",
+      "response_turn": 3,
+      "response_quote": "What other programs has corporate added this year?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 6,
+      "quote": "Adding testing is going to burn them out.",
+      "category": "workflow_staffing",
+      "response_turn": 7,
+      "response_quote": "I appreciate you being straight with me, and burnout is a real risk.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 16,
+      "quote": "Compliance will be the issue.",
+      "category": "regulatory_liability",
+      "response_turn": 17,
+      "response_quote": "The CLIA certificate is held at the store level, with your pharmacist-in-charge as the director of record, and our compliance packet includes the documentation templates and the referral protocol that most chains have already approved.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 19,
+     "quote": "Does Thursday the 1st at ten work on your end?",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 5 discovery questions, 3 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How are clinical services going at this store?",
+     "expected_speaker": "rep",
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "What other programs has corporate added this year?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "Which part of the day is hardest for your pharmacists right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "What does corporate look at when they decide whether a store gets a new service?",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "Do you have a sense of how much sick traffic you see in a week?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "Last season we did almost two thousand, which is a lot for a store our size.",
+     "expected_speaker": "customer",
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "What other programs has corporate added this year?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "Adding testing is going to burn them out.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "I appreciate you being straight with me, and burnout is a real risk.",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "Compliance will be the issue.",
+     "expected_speaker": "customer",
+     "claimed_turn": 16,
+     "found_turn": 16,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "The CLIA certificate is held at the store level, with your pharmacist-in-charge as the director of record, and our compliance packet includes the documentation templates and the referral protocol that most chains have already approved.",
+     "expected_speaker": "rep",
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "Does Thursday the 1st at ten work on your end?",
+     "expected_speaker": null,
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 402,
+    "customer_words": 313,
+    "rep_share": 0.5622,
+    "longest_rep_turn": 9,
+    "longest_rep_turn_words": 114
+   },
+   "discovery_turns": [
+    1,
+    3,
+    7,
+    11,
+    13
+   ],
+   "objections": [
+    {
+     "turn": 2,
+     "quote": "Last season we did almost two thousand, which is a lot for a store our size.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 3,
+     "response_quote": "What other programs has corporate added this year?"
+    },
+    {
+     "turn": 6,
+     "quote": "Adding testing is going to burn them out.",
+     "category": "workflow_staffing",
+     "handling": "weak",
+     "response_turn": 7,
+     "response_quote": "I appreciate you being straight with me, and burnout is a real risk."
+    },
+    {
+     "turn": 16,
+     "quote": "Compliance will be the issue.",
+     "category": "regulatory_liability",
+     "handling": "adequate",
+     "response_turn": 17,
+     "response_quote": "The CLIA certificate is held at the store level, with your pharmacist-in-charge as the director of record, and our compliance packet includes the documentation templates and the referral protocol that most chains have already approved."
+    }
+   ],
+   "next_step": "clear",
+   "score": 81,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 19.2,
+    "next_step": 20.0,
+    "objections": 11.7
+   }
+  },
+  {
+   "transcript_id": "T08",
+   "rep_id": "R2",
+   "rep_name": "Daniel Okafor",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 1,
+      "quote": "How's it looking so far?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 3,
+      "quote": "What are those customers asking you for?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "How do those conversations usually end?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "What would concern you about running the tests yourself?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 15,
+      "quote": "Who's working with you on a typical weekday?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 6,
+      "quote": "I tell them to see a doctor, they tell me they can't get an appointment until next week, and they leave frustrated.",
+      "category": "other",
+      "response_turn": 7,
+      "response_quote": "If you could give them a definite answer right here, what would that be worth to you?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 8,
+      "quote": "But I'm not sure people around here would come to a pharmacy for a test.",
+      "category": "demand_need",
+      "response_turn": 9,
+      "response_quote": "That's a reasonable doubt, and small towns are different.",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 14,
+      "quote": "I'm the only pharmacist most days.",
+      "category": "workflow_staffing",
+      "response_turn": 15,
+      "response_quote": "Who's working with you on a typical weekday?",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 18,
+      "quote": "She's been asking for more responsibility, and I've been worried about losing her to the hospital, so this might actually help me keep her.",
+      "category": "other",
+      "response_turn": 19,
+      "response_quote": "Hale's office manager this week to introduce the referral idea, if that's okay with you, and I'll come back Tuesday the 29th at eleven to sign the CLIA packet with you and schedule Jordan's training.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 19,
+     "quote": "Hale's office manager this week to introduce the referral idea, if that's okay with you, and I'll come back Tuesday the 29th at eleven to sign the CLIA packet with you and schedule Jordan's training.",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 5 discovery questions, 4 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How's it looking so far?",
+     "expected_speaker": "rep",
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "What are those customers asking you for?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "How do those conversations usually end?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "What would concern you about running the tests yourself?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[4]",
+     "quote": "Who's working with you on a typical weekday?",
+     "expected_speaker": "rep",
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "I tell them to see a doctor, they tell me they can't get an appointment until next week, and they leave frustrated.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "If you could give them a definite answer right here, what would that be worth to you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "But I'm not sure people around here would come to a pharmacy for a test.",
+     "expected_speaker": "customer",
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "That's a reasonable doubt, and small towns are different.",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "I'm the only pharmacist most days.",
+     "expected_speaker": "customer",
+     "claimed_turn": 14,
+     "found_turn": 14,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "Who's working with you on a typical weekday?",
+     "expected_speaker": "rep",
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[3].quote",
+     "quote": "She's been asking for more responsibility, and I've been worried about losing her to the hospital, so this might actually help me keep her.",
+     "expected_speaker": "customer",
+     "claimed_turn": 18,
+     "found_turn": 18,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[3].response_quote",
+     "quote": "Hale's office manager this week to introduce the referral idea, if that's okay with you, and I'll come back Tuesday the 29th at eleven to sign the CLIA packet with you and schedule Jordan's training.",
+     "expected_speaker": "rep",
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "Hale's office manager this week to introduce the referral idea, if that's okay with you, and I'll come back Tuesday the 29th at eleven to sign the CLIA packet with you and schedule Jordan's training.",
+     "expected_speaker": null,
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 307,
+    "customer_words": 323,
+    "rep_share": 0.4873,
+    "longest_rep_turn": 11,
+    "longest_rep_turn_words": 86
+   },
+   "discovery_turns": [
+    1,
+    3,
+    5,
+    13,
+    15
+   ],
+   "objections": [
+    {
+     "turn": 6,
+     "quote": "I tell them to see a doctor, they tell me they can't get an appointment until next week, and they leave frustrated.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 7,
+     "response_quote": "If you could give them a definite answer right here, what would that be worth to you?"
+    },
+    {
+     "turn": 8,
+     "quote": "But I'm not sure people around here would come to a pharmacy for a test.",
+     "category": "demand_need",
+     "handling": "strong",
+     "response_turn": 9,
+     "response_quote": "That's a reasonable doubt, and small towns are different."
+    },
+    {
+     "turn": 14,
+     "quote": "I'm the only pharmacist most days.",
+     "category": "workflow_staffing",
+     "handling": "strong",
+     "response_turn": 15,
+     "response_quote": "Who's working with you on a typical weekday?"
+    },
+    {
+     "turn": 18,
+     "quote": "She's been asking for more responsibility, and I've been worried about losing her to the hospital, so this might actually help me keep her.",
+     "category": "other",
+     "handling": "adequate",
+     "response_turn": 19,
+     "response_quote": "Hale's office manager this week to introduce the referral idea, if that's okay with you, and I'll come back Tuesday the 29th at eleven to sign the CLIA packet with you and schedule Jordan's training."
+    }
+   ],
+   "next_step": "clear",
+   "score": 92,
+   "score_parts": {
+    "discovery": 30.0,
+    "talk": 20.0,
+    "next_step": 20.0,
+    "objections": 21.9
+   }
+  },
+  {
+   "transcript_id": "T09",
+   "rep_id": "R3",
+   "rep_name": "Priya Raman",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 1,
+      "quote": "Did you just redo the shelves?",
+      "kind": "situation",
+      "open_ended": false
+     },
+     {
+      "turn": 5,
+      "quote": "Which ones do you carry right now?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 7,
+      "quote": "How are they selling?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 17,
+      "quote": "What do your customers usually ask about when they're buying a monitor?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 4,
+      "quote": "We already sell monitors, though.",
+      "category": "incumbent_competitor",
+      "response_turn": 5,
+      "response_quote": "Which ones do you carry right now?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 10,
+      "quote": "I don't really have room for another display.",
+      "category": "inventory_space",
+      "response_turn": null,
+      "response_quote": null,
+      "handling": "unaddressed",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 12,
+      "quote": "What's the minimum order?",
+      "category": "inventory_space",
+      "response_turn": 13,
+      "response_quote": "One case of six, and the first order is sale-or-return for ninety days, so there's no risk.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 14,
+      "quote": "My wholesaler gives me a rebate if I buy everything through them.",
+      "category": "cost_margin",
+      "response_turn": 15,
+      "response_quote": "We're listed with all three major wholesalers, so it would count toward your rebate like anything else.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 21,
+     "quote": "Even better, how about I come back next Wednesday, the 30th, at ten and bring a sample so you can see the cuff and the display?",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 4 discovery questions, 4 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "Did you just redo the shelves?",
+     "expected_speaker": "rep",
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Which ones do you carry right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "How are they selling?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[3]",
+     "quote": "What do your customers usually ask about when they're buying a monitor?",
+     "expected_speaker": "rep",
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "We already sell monitors, though.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Which ones do you carry right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "I don't really have room for another display.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "What's the minimum order?",
+     "expected_speaker": "customer",
+     "claimed_turn": 12,
+     "found_turn": 12,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "One case of six, and the first order is sale-or-return for ninety days, so there's no risk.",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[3].quote",
+     "quote": "My wholesaler gives me a rebate if I buy everything through them.",
+     "expected_speaker": "customer",
+     "claimed_turn": 14,
+     "found_turn": 14,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[3].response_quote",
+     "quote": "We're listed with all three major wholesalers, so it would count toward your rebate like anything else.",
+     "expected_speaker": "rep",
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "Even better, how about I come back next Wednesday, the 30th, at ten and bring a sample so you can see the cuff and the display?",
+     "expected_speaker": null,
+     "claimed_turn": 21,
+     "found_turn": 21,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 298,
+    "customer_words": 117,
+    "rep_share": 0.7181,
+    "longest_rep_turn": 3,
+    "longest_rep_turn_words": 67
+   },
+   "discovery_turns": [
+    1,
+    5,
+    7,
+    17
+   ],
+   "objections": [
+    {
+     "turn": 4,
+     "quote": "We already sell monitors, though.",
+     "category": "incumbent_competitor",
+     "handling": "weak",
+     "response_turn": 5,
+     "response_quote": "Which ones do you carry right now?"
+    },
+    {
+     "turn": 10,
+     "quote": "I don't really have room for another display.",
+     "category": "inventory_space",
+     "handling": "unaddressed",
+     "response_turn": null,
+     "response_quote": null
+    },
+    {
+     "turn": 12,
+     "quote": "What's the minimum order?",
+     "category": "inventory_space",
+     "handling": "adequate",
+     "response_turn": 13,
+     "response_quote": "One case of six, and the first order is sale-or-return for ninety days, so there's no risk."
+    },
+    {
+     "turn": 14,
+     "quote": "My wholesaler gives me a rebate if I buy everything through them.",
+     "category": "cost_margin",
+     "handling": "weak",
+     "response_turn": 15,
+     "response_quote": "We're listed with all three major wholesalers, so it would count toward your rebate like anything else."
+    }
+   ],
+   "next_step": "clear",
+   "score": 62,
+   "score_parts": {
+    "discovery": 24.0,
+    "talk": 8.8,
+    "next_step": 20.0,
+    "objections": 8.8
+   }
+  },
+  {
+   "transcript_id": "T10",
+   "rep_id": "R3",
+   "rep_name": "Priya Raman",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 7,
+      "quote": "Do you get a lot of people coming in with sore throats?",
+      "kind": "situation",
+      "open_ended": false
+     },
+     {
+      "turn": 9,
+      "quote": "How far is the clinic from here?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 2,
+      "quote": "We're short a tech.",
+      "category": "workflow_staffing",
+      "response_turn": 3,
+      "response_quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 4,
+      "quote": "We're short a tech, like I said.",
+      "category": "workflow_staffing",
+      "response_turn": 5,
+      "response_quote": "The good news is the test only takes a few minutes.",
+      "handling": "strong",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 15,
+     "quote": "I'll follow up in a few weeks to see what he thinks.",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 2 discovery questions, 2 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "Do you get a lot of people coming in with sore throats?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "How far is the clinic from here?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "We're short a tech.",
+     "expected_speaker": "customer",
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream.",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "We're short a tech, like I said.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "The good news is the test only takes a few minutes.",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll follow up in a few weeks to see what he thinks.",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 173,
+    "customer_words": 68,
+    "rep_share": 0.7178,
+    "longest_rep_turn": 3,
+    "longest_rep_turn_words": 67
+   },
+   "discovery_turns": [
+    7,
+    9
+   ],
+   "objections": [
+    {
+     "turn": 2,
+     "quote": "We're short a tech.",
+     "category": "workflow_staffing",
+     "handling": "adequate",
+     "response_turn": 3,
+     "response_quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream."
+    },
+    {
+     "turn": 4,
+     "quote": "We're short a tech, like I said.",
+     "category": "workflow_staffing",
+     "handling": "strong",
+     "response_turn": 5,
+     "response_quote": "The good news is the test only takes a few minutes."
+    }
+   ],
+   "next_step": "vague",
+   "score": 53,
+   "score_parts": {
+    "discovery": 12.0,
+    "talk": 8.8,
+    "next_step": 7.0,
+    "objections": 25.0
+   }
+  },
+  {
+   "transcript_id": "T11",
+   "rep_id": "R3",
+   "rep_name": "Priya Raman",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "What kinds of patients do you see the most?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "What do those parents usually need from you?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "What else would you need to know?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 4,
+      "quote": "There are three elementary schools within a mile of us, so in the fall it's nonstop sick kids and worried parents.",
+      "category": "other",
+      "response_turn": 5,
+      "response_quote": "What do those parents usually need from you?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 6,
+      "quote": "I can't answer that without a test, so I send them to their pediatrician.",
+      "category": "other",
+      "response_turn": 7,
+      "response_quote": "And how quickly can they usually get in with the pediatrician?",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 10,
+      "quote": "But I'm worried about kids specifically.",
+      "category": "other",
+      "response_turn": 11,
+      "response_quote": "Oh, it's really easy, they get used to it fast.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 17,
+     "quote": "I'll check back with you after the holidays, maybe, once things calm down?",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 3 discovery questions, 3 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "What kinds of patients do you see the most?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "What do those parents usually need from you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "What else would you need to know?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "There are three elementary schools within a mile of us, so in the fall it's nonstop sick kids and worried parents.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "What do those parents usually need from you?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "I can't answer that without a test, so I send them to their pediatrician.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "And how quickly can they usually get in with the pediatrician?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "But I'm worried about kids specifically.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "Oh, it's really easy, they get used to it fast.",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll check back with you after the holidays, maybe, once things calm down?",
+     "expected_speaker": null,
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 182,
+    "customer_words": 154,
+    "rep_share": 0.5417,
+    "longest_rep_turn": 9,
+    "longest_rep_turn_words": 49
+   },
+   "discovery_turns": [
+    3,
+    5,
+    13
+   ],
+   "objections": [
+    {
+     "turn": 4,
+     "quote": "There are three elementary schools within a mile of us, so in the fall it's nonstop sick kids and worried parents.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 5,
+     "response_quote": "What do those parents usually need from you?"
+    },
+    {
+     "turn": 6,
+     "quote": "I can't answer that without a test, so I send them to their pediatrician.",
+     "category": "other",
+     "handling": "adequate",
+     "response_turn": 7,
+     "response_quote": "And how quickly can they usually get in with the pediatrician?"
+    },
+    {
+     "turn": 10,
+     "quote": "But I'm worried about kids specifically.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 11,
+     "response_quote": "Oh, it's really easy, they get used to it fast."
+    }
+   ],
+   "next_step": "vague",
+   "score": 57,
+   "score_parts": {
+    "discovery": 18.0,
+    "talk": 20.0,
+    "next_step": 7.0,
+    "objections": 11.7
+   }
+  },
+  {
+   "transcript_id": "T12",
+   "rep_id": "R3",
+   "rep_name": "Priya Raman",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 5,
+      "quote": "How do you handle blood pressure questions at the counter today?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 7,
+      "quote": "Do people ask you about buying monitors?",
+      "kind": "situation",
+      "open_ended": false
+     },
+     {
+      "turn": 13,
+      "quote": "How about I bring the comparison sheet by next Monday, the 5th, at two, and we can walk it up to her together?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 10,
+      "quote": "The problem is the cardiologists recommend a specific brand.",
+      "category": "incumbent_competitor",
+      "response_turn": 11,
+      "response_quote": "The BP-200 is validated to the same standard as the national brand, and I have a one-page comparison you could share with the practice manager upstairs.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 13,
+     "quote": "How about I bring the comparison sheet by next Monday, the 5th, at two, and we can walk it up to her together?",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 3 discovery questions, 1 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How do you handle blood pressure questions at the counter today?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Do people ask you about buying monitors?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "How about I bring the comparison sheet by next Monday, the 5th, at two, and we can walk it up to her together?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "The problem is the cardiologists recommend a specific brand.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "The BP-200 is validated to the same standard as the national brand, and I have a one-page comparison you could share with the practice manager upstairs.",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "How about I bring the comparison sheet by next Monday, the 5th, at two, and we can walk it up to her together?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 190,
+    "customer_words": 108,
+    "rep_share": 0.6376,
+    "longest_rep_turn": 3,
+    "longest_rep_turn_words": 46
+   },
+   "discovery_turns": [
+    5,
+    7,
+    13
+   ],
+   "objections": [
+    {
+     "turn": 10,
+     "quote": "The problem is the cardiologists recommend a specific brand.",
+     "category": "incumbent_competitor",
+     "handling": "adequate",
+     "response_turn": 11,
+     "response_quote": "The BP-200 is validated to the same standard as the national brand, and I have a one-page comparison you could share with the practice manager upstairs."
+    }
+   ],
+   "next_step": "clear",
+   "score": 72,
+   "score_parts": {
+    "discovery": 18.0,
+    "talk": 14.2,
+    "next_step": 20.0,
+    "objections": 20.1
+   }
+  },
+  {
+   "transcript_id": "T13",
+   "rep_id": "R4",
+   "rep_name": "Kevin Walsh",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 7,
+      "quote": "Do you do any testing right now?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 2,
+      "quote": "My concern is staffing.",
+      "category": "workflow_staffing",
+      "response_turn": 3,
+      "response_quote": "Your techs can do it in between other stuff, and if it gets busy you just tell people to come back later.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 6,
+      "quote": "What about the CLIA paperwork?",
+      "category": "regulatory_liability",
+      "response_turn": 7,
+      "response_quote": "That's the easiest part, it's just a form, and everybody gets through it.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 11,
+     "quote": "I'll swing by in a couple of weeks and we can figure it out then.",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 1 discovery questions, 2 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "Do you do any testing right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "My concern is staffing.",
+     "expected_speaker": "customer",
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Your techs can do it in between other stuff, and if it gets busy you just tell people to come back later.",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "What about the CLIA paperwork?",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "That's the easiest part, it's just a form, and everybody gets through it.",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll swing by in a couple of weeks and we can figure it out then.",
+     "expected_speaker": null,
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 354,
+    "customer_words": 51,
+    "rep_share": 0.8741,
+    "longest_rep_turn": 1,
+    "longest_rep_turn_words": 126
+   },
+   "discovery_turns": [
+    7
+   ],
+   "objections": [
+    {
+     "turn": 2,
+     "quote": "My concern is staffing.",
+     "category": "workflow_staffing",
+     "handling": "weak",
+     "response_turn": 3,
+     "response_quote": "Your techs can do it in between other stuff, and if it gets busy you just tell people to come back later."
+    },
+    {
+     "turn": 6,
+     "quote": "What about the CLIA paperwork?",
+     "category": "regulatory_liability",
+     "handling": "weak",
+     "response_turn": 7,
+     "response_quote": "That's the easiest part, it's just a form, and everybody gets through it."
+    }
+   ],
+   "next_step": "vague",
+   "score": 20,
+   "score_parts": {
+    "discovery": 6.0,
+    "talk": 0.0,
+    "next_step": 7.0,
+    "objections": 7.5
+   }
+  },
+  {
+   "transcript_id": "T14",
+   "rep_id": "R4",
+   "rep_name": "Kevin Walsh",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [],
+    "objections": [
+     {
+      "turn": 4,
+      "quote": "I doubt that would happen here.",
+      "category": "demand_need",
+      "response_turn": 5,
+      "response_quote": "Plus it comes with the Know Your Numbers kit, so you can run a free blood pressure day and really get the word out.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 6,
+      "quote": "We don't really do events.",
+      "category": "other",
+      "response_turn": 7,
+      "response_quote": "So, do you want to start with a case?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "none",
+     "turn": null,
+     "quote": null,
+     "rationale": "No follow-up language found."
+    },
+    "summary": "Keyword baseline: 0 discovery questions, 2 objections, next step none."
+   },
+   "checks": [
+    {
+     "where": "objections[0].quote",
+     "quote": "I doubt that would happen here.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Plus it comes with the Know Your Numbers kit, so you can run a free blood pressure day and really get the word out.",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "We don't really do events.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "So, do you want to start with a case?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 182,
+    "customer_words": 55,
+    "rep_share": 0.7679,
+    "longest_rep_turn": 3,
+    "longest_rep_turn_words": 77
+   },
+   "discovery_turns": [],
+   "objections": [
+    {
+     "turn": 4,
+     "quote": "I doubt that would happen here.",
+     "category": "demand_need",
+     "handling": "weak",
+     "response_turn": 5,
+     "response_quote": "Plus it comes with the Know Your Numbers kit, so you can run a free blood pressure day and really get the word out."
+    },
+    {
+     "turn": 6,
+     "quote": "We don't really do events.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 7,
+     "response_quote": "So, do you want to start with a case?"
+    }
+   ],
+   "next_step": "none",
+   "score": 13,
+   "score_parts": {
+    "discovery": 0.0,
+    "talk": 5.5,
+    "next_step": 0.0,
+    "objections": 7.5
+   }
+  },
+  {
+   "transcript_id": "T15",
+   "rep_id": "R4",
+   "rep_name": "Kevin Walsh",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 5,
+      "quote": "How many prescriptions are you filling a day?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "Who on your team would end up running the tests?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 8,
+      "quote": "My real worry is the cash price.",
+      "category": "cost_margin",
+      "response_turn": 9,
+      "response_quote": "For patients on a tight budget, a lot of our stores set a lower price, around thirty dollars, and they still clear about eighteen dollars a test.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 10,
+      "quote": "What happens if it breaks?",
+      "category": "other",
+      "response_turn": 11,
+      "response_quote": "So what do you think, should we get you started?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 15,
+     "quote": "I'll email you the info and touch base next month sometime.",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 2 discovery questions, 2 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How many prescriptions are you filling a day?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Who on your team would end up running the tests?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "My real worry is the cash price.",
+     "expected_speaker": "customer",
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "For patients on a tight budget, a lot of our stores set a lower price, around thirty dollars, and they still clear about eighteen dollars a test.",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "What happens if it breaks?",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "So what do you think, should we get you started?",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll email you the info and touch base next month sometime.",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 267,
+    "customer_words": 75,
+    "rep_share": 0.7807,
+    "longest_rep_turn": 1,
+    "longest_rep_turn_words": 102
+   },
+   "discovery_turns": [
+    5,
+    13
+   ],
+   "objections": [
+    {
+     "turn": 8,
+     "quote": "My real worry is the cash price.",
+     "category": "cost_margin",
+     "handling": "adequate",
+     "response_turn": 9,
+     "response_quote": "For patients on a tight budget, a lot of our stores set a lower price, around thirty dollars, and they still clear about eighteen dollars a test."
+    },
+    {
+     "turn": 10,
+     "quote": "What happens if it breaks?",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 11,
+     "response_quote": "So what do you think, should we get you started?"
+    }
+   ],
+   "next_step": "vague",
+   "score": 37,
+   "score_parts": {
+    "discovery": 12.0,
+    "talk": 4.6,
+    "next_step": 7.0,
+    "objections": 13.8
+   }
+  },
+  {
+   "transcript_id": "T16",
+   "rep_id": "R4",
+   "rep_name": "Kevin Walsh",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 5,
+      "quote": "What monitors are you carrying right now?",
+      "kind": "situation",
+      "open_ended": true
+     }
+    ],
+    "objections": [
+     {
+      "turn": 2,
+      "quote": "Our front store is planned by corporate.",
+      "category": "other",
+      "response_turn": 3,
+      "response_quote": "Everybody I talk to has a little wiggle room for local products.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 4,
+      "quote": "Not really.",
+      "category": "other",
+      "response_turn": 5,
+      "response_quote": "What monitors are you carrying right now?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 9,
+     "quote": "I'll drop off some samples next time I'm in the area.",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 1 discovery questions, 2 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "What monitors are you carrying right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "Our front store is planned by corporate.",
+     "expected_speaker": "customer",
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Everybody I talk to has a little wiggle room for local products.",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "Not really.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "What monitors are you carrying right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll drop off some samples next time I'm in the area.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 184,
+    "customer_words": 43,
+    "rep_share": 0.8106,
+    "longest_rep_turn": 1,
+    "longest_rep_turn_words": 85
+   },
+   "discovery_turns": [
+    5
+   ],
+   "objections": [
+    {
+     "turn": 2,
+     "quote": "Our front store is planned by corporate.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 3,
+     "response_quote": "Everybody I talk to has a little wiggle room for local products."
+    },
+    {
+     "turn": 4,
+     "quote": "Not really.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 5,
+     "response_quote": "What monitors are you carrying right now?"
+    }
+   ],
+   "next_step": "vague",
+   "score": 23,
+   "score_parts": {
+    "discovery": 6.0,
+    "talk": 2.6,
+    "next_step": 7.0,
+    "objections": 7.5
+   }
+  },
+  {
+   "transcript_id": "T17",
+   "rep_id": "R5",
+   "rep_name": "Jessica Morales",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 5,
+      "quote": "Do you do any testing right now?",
+      "kind": "situation",
+      "open_ended": false
+     },
+     {
+      "turn": 11,
+      "quote": "Do you get a lot of flu customers in the winter?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 8,
+      "quote": "The issue last time was liability.",
+      "category": "regulatory_liability",
+      "response_turn": 9,
+      "response_quote": "We also have a really nice window cling and some posters.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 10,
+      "quote": "Not really, no.",
+      "category": "other",
+      "response_turn": 11,
+      "response_quote": "Do you get a lot of flu customers in the winter?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "none",
+     "turn": null,
+     "quote": null,
+     "rationale": "No follow-up language found."
+    },
+    "summary": "Keyword baseline: 2 discovery questions, 2 objections, next step none."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "Do you do any testing right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Do you get a lot of flu customers in the winter?",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "The issue last time was liability.",
+     "expected_speaker": "customer",
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "We also have a really nice window cling and some posters.",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "Not really, no.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "Do you get a lot of flu customers in the winter?",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 161,
+    "customer_words": 45,
+    "rep_share": 0.7816,
+    "longest_rep_turn": 3,
+    "longest_rep_turn_words": 45
+   },
+   "discovery_turns": [
+    5,
+    11
+   ],
+   "objections": [
+    {
+     "turn": 8,
+     "quote": "The issue last time was liability.",
+     "category": "regulatory_liability",
+     "handling": "weak",
+     "response_turn": 9,
+     "response_quote": "We also have a really nice window cling and some posters."
+    },
+    {
+     "turn": 10,
+     "quote": "Not really, no.",
+     "category": "other",
+     "handling": "weak",
+     "response_turn": 11,
+     "response_quote": "Do you get a lot of flu customers in the winter?"
+    }
+   ],
+   "next_step": "none",
+   "score": 24,
+   "score_parts": {
+    "discovery": 12.0,
+    "talk": 4.6,
+    "next_step": 0.0,
+    "objections": 7.5
+   }
+  },
+  {
+   "transcript_id": "T18",
+   "rep_id": "R5",
+   "rep_name": "Jessica Morales",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 7,
+      "quote": "Do you sell more in certain months?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 4,
+      "quote": "We already carry two monitors, and honestly they don't sell much.",
+      "category": "incumbent_competitor",
+      "response_turn": null,
+      "response_quote": null,
+      "handling": "unaddressed",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 6,
+      "quote": "Price isn't really the problem.",
+      "category": "cost_margin",
+      "response_turn": 7,
+      "response_quote": "Do you sell more in certain months?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 10,
+      "quote": "We don't have room for a display.",
+      "category": "inventory_space",
+      "response_turn": 11,
+      "response_quote": "It could maybe go somewhere else?",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 13,
+     "quote": "I'll leave you a sell sheet, and maybe I can check back in a month or so?",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 1 discovery questions, 3 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "Do you sell more in certain months?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "We already carry two monitors, and honestly they don't sell much.",
+     "expected_speaker": "customer",
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "Price isn't really the problem.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "Do you sell more in certain months?",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].quote",
+     "quote": "We don't have room for a display.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[2].response_quote",
+     "quote": "It could maybe go somewhere else?",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I'll leave you a sell sheet, and maybe I can check back in a month or so?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 126,
+    "customer_words": 55,
+    "rep_share": 0.6961,
+    "longest_rep_turn": 3,
+    "longest_rep_turn_words": 38
+   },
+   "discovery_turns": [
+    7
+   ],
+   "objections": [
+    {
+     "turn": 4,
+     "quote": "We already carry two monitors, and honestly they don't sell much.",
+     "category": "incumbent_competitor",
+     "handling": "unaddressed",
+     "response_turn": null,
+     "response_quote": null
+    },
+    {
+     "turn": 6,
+     "quote": "Price isn't really the problem.",
+     "category": "cost_margin",
+     "handling": "weak",
+     "response_turn": 7,
+     "response_quote": "Do you sell more in certain months?"
+    },
+    {
+     "turn": 10,
+     "quote": "We don't have room for a display.",
+     "category": "inventory_space",
+     "handling": "weak",
+     "response_turn": 11,
+     "response_quote": "It could maybe go somewhere else?"
+    }
+   ],
+   "next_step": "vague",
+   "score": 28,
+   "score_parts": {
+    "discovery": 6.0,
+    "talk": 10.3,
+    "next_step": 7.0,
+    "objections": 5.0
+   }
+  },
+  {
+   "transcript_id": "T19",
+   "rep_id": "R5",
+   "rep_name": "Jessica Morales",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "Do you offer any clinical services right now?",
+      "kind": "situation",
+      "open_ended": false
+     },
+     {
+      "turn": 9,
+      "quote": "Do you have techs?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 6,
+      "quote": "The CLIA waiver worries me.",
+      "category": "regulatory_liability",
+      "response_turn": 7,
+      "response_quote": "Well, the kits are about twelve dollars each, and they last eighteen months.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     },
+     {
+      "turn": 8,
+      "quote": "And my bigger issue is time.",
+      "category": "workflow_staffing",
+      "response_turn": 9,
+      "response_quote": "That's okay, a lot of stores only have one pharmacist.",
+      "handling": "weak",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "vague",
+     "turn": 13,
+     "quote": "I can send you some information, and maybe we can talk again sometime next month?",
+     "rationale": "Follow-up without a date."
+    },
+    "summary": "Keyword baseline: 2 discovery questions, 2 objections, next step vague."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "Do you offer any clinical services right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "Do you have techs?",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "The CLIA waiver worries me.",
+     "expected_speaker": "customer",
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "Well, the kits are about twelve dollars each, and they last eighteen months.",
+     "expected_speaker": "rep",
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].quote",
+     "quote": "And my bigger issue is time.",
+     "expected_speaker": "customer",
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[1].response_quote",
+     "quote": "That's okay, a lot of stores only have one pharmacist.",
+     "expected_speaker": "rep",
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "I can send you some information, and maybe we can talk again sometime next month?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 126,
+    "customer_words": 79,
+    "rep_share": 0.6146,
+    "longest_rep_turn": 5,
+    "longest_rep_turn_words": 50
+   },
+   "discovery_turns": [
+    3,
+    9
+   ],
+   "objections": [
+    {
+     "turn": 6,
+     "quote": "The CLIA waiver worries me.",
+     "category": "regulatory_liability",
+     "handling": "adequate",
+     "response_turn": 7,
+     "response_quote": "Well, the kits are about twelve dollars each, and they last eighteen months."
+    },
+    {
+     "turn": 8,
+     "quote": "And my bigger issue is time.",
+     "category": "workflow_staffing",
+     "handling": "weak",
+     "response_turn": 9,
+     "response_quote": "That's okay, a lot of stores only have one pharmacist."
+    }
+   ],
+   "next_step": "vague",
+   "score": 48,
+   "score_parts": {
+    "discovery": 12.0,
+    "talk": 15.7,
+    "next_step": 7.0,
+    "objections": 13.8
+   }
+  },
+  {
+   "transcript_id": "T20",
+   "rep_id": "R5",
+   "rep_name": "Jessica Morales",
+   "sample": 0,
+   "analysis": {
+    "discovery_questions": [
+     {
+      "turn": 3,
+      "quote": "How are blood pressure monitors doing for you right now?",
+      "kind": "situation",
+      "open_ended": true
+     },
+     {
+      "turn": 5,
+      "quote": "What do you think holds people back?",
+      "kind": "problem",
+      "open_ended": true
+     },
+     {
+      "turn": 13,
+      "quote": "Is there anything the senior community does that we could tie into?",
+      "kind": "situation",
+      "open_ended": false
+     }
+    ],
+    "objections": [
+     {
+      "turn": 10,
+      "quote": "But I can't take on much inventory right now.",
+      "category": "inventory_space",
+      "response_turn": 11,
+      "response_quote": "The first order is just one case of six, and it's sale-or-return for ninety days, so if they don't sell you send them back for full credit.",
+      "handling": "adequate",
+      "rationale": "Keyword rules on the rep's next turn."
+     }
+    ],
+    "next_step": {
+     "quality": "clear",
+     "turn": 15,
+     "quote": "Could I come by on Thursday the 15th at eleven with a case and the kit, so we can plan it together?",
+     "rationale": "Mentions a day or time."
+    },
+    "summary": "Keyword baseline: 3 discovery questions, 1 objections, next step clear."
+   },
+   "checks": [
+    {
+     "where": "discovery_questions[0]",
+     "quote": "How are blood pressure monitors doing for you right now?",
+     "expected_speaker": "rep",
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[1]",
+     "quote": "What do you think holds people back?",
+     "expected_speaker": "rep",
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "discovery_questions[2]",
+     "quote": "Is there anything the senior community does that we could tie into?",
+     "expected_speaker": "rep",
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].quote",
+     "quote": "But I can't take on much inventory right now.",
+     "expected_speaker": "customer",
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "objections[0].response_quote",
+     "quote": "The first order is just one case of six, and it's sale-or-return for ninety days, so if they don't sell you send them back for full credit.",
+     "expected_speaker": "rep",
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "next_step.quote",
+     "quote": "Could I come by on Thursday the 15th at eleven with a case and the kit, so we can plan it together?",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "talk": {
+    "rep_words": 192,
+    "customer_words": 101,
+    "rep_share": 0.6553,
+    "longest_rep_turn": 9,
+    "longest_rep_turn_words": 46
+   },
+   "discovery_turns": [
+    3,
+    5,
+    13
+   ],
+   "objections": [
+    {
+     "turn": 10,
+     "quote": "But I can't take on much inventory right now.",
+     "category": "inventory_space",
+     "handling": "adequate",
+     "response_turn": 11,
+     "response_quote": "The first order is just one case of six, and it's sale-or-return for ninety days, so if they don't sell you send them back for full credit."
+    }
+   ],
+   "next_step": "clear",
+   "score": 71,
+   "score_parts": {
+    "discovery": 18.0,
+    "talk": 13.0,
+    "next_step": 20.0,
+    "objections": 20.1
+   }
+  }
+ ],
+ "coaching": [
+  {
+   "transcript_id": "T01",
+   "note": {
+    "summary": "Meeting score 95/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 13,
+     "evidence_quote": "That's a fair worry, and Saturdays are exactly when the sick kids show up."
+    },
+    "suggestions": [
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "When a parent walks in with a kid who has a sore throat, what usually happens today?"
+     },
+     {
+      "title": "Recap the customer's words before you close",
+      "what_happened": "The close was solid; a short recap would make it stronger.",
+      "try_instead": "Try: 'So the two things that matter are staff time and break-even. Here's how we cover both.'",
+      "evidence_turn": 27,
+      "evidence_quote": "Agreement and break-even sheet in your inbox by end of day, and I'll see you and Denise on Thursday the 17th at two."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "That's a fair worry, and Saturdays are exactly when the sick kids show up.",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "When a parent walks in with a kid who has a sore throat, what usually happens today?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "Agreement and break-even sheet in your inbox by end of day, and I'll see you and Denise on Thursday the 17th at two.",
+     "expected_speaker": null,
+     "claimed_turn": 27,
+     "found_turn": 27,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "That's a fair worry, and Saturdays are exactly when the sick kids show up.",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "When a parent walks in with a kid who has a sore throat, what usually happens today?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "Agreement and break-even sheet in your inbox by end of day, and I'll see you and Denise on Thursday the 17th at two.",
+     "expected_speaker": null,
+     "claimed_turn": 27,
+     "found_turn": 27,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T02",
+   "note": {
+    "summary": "Meeting score 86/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 19,
+     "evidence_quote": "What happened last time, if you don't mind me asking?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 6,
+      "evidence_quote": "Their doctor tells them to check their pressure at home, they come here, and sixty dollars feels like a lot for something they're not sure they'll use."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "How are home blood pressure monitors selling for you right now?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What happened last time, if you don't mind me asking?",
+     "expected_speaker": null,
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "Their doctor tells them to check their pressure at home, they come here, and sixty dollars feels like a lot for something they're not sure they'll use.",
+     "expected_speaker": null,
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How are home blood pressure monitors selling for you right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What happened last time, if you don't mind me asking?",
+     "expected_speaker": null,
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "Their doctor tells them to check their pressure at home, they come here, and sixty dollars feels like a lot for something they're not sure they'll use.",
+     "expected_speaker": null,
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How are home blood pressure monitors selling for you right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T03",
+   "note": {
+    "summary": "Meeting score 87/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 17,
+     "evidence_quote": "What do you like about the house brand, and what's missing?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a unaddressed response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 10,
+      "evidence_quote": "If she can't see it on a weekly report, it didn't happen."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "What's on that list?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What do you like about the house brand, and what's missing?",
+     "expected_speaker": null,
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "If she can't see it on a weekly report, it didn't happen.",
+     "expected_speaker": null,
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "What's on that list?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What do you like about the house brand, and what's missing?",
+     "expected_speaker": null,
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "If she can't see it on a weekly report, it didn't happen.",
+     "expected_speaker": null,
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "What's on that list?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T04",
+   "note": {
+    "summary": "Meeting score 94/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 13,
+     "evidence_quote": "Which of your team would you want trained first?"
+    },
+    "suggestions": [
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "What did you learn from the people who came in?"
+     },
+     {
+      "title": "Recap the customer's words before you close",
+      "what_happened": "The close was solid; a short recap would make it stronger.",
+      "try_instead": "Try: 'So the two things that matter are staff time and break-even. Here's how we cover both.'",
+      "evidence_turn": 19,
+      "evidence_quote": "I'll email you the training outline tonight so Luis can see what he's signing up for."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Which of your team would you want trained first?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "What did you learn from the people who came in?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll email you the training outline tonight so Luis can see what he's signing up for.",
+     "expected_speaker": null,
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Which of your team would you want trained first?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "What did you learn from the people who came in?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll email you the training outline tonight so Luis can see what he's signing up for.",
+     "expected_speaker": null,
+     "claimed_turn": 19,
+     "found_turn": 19,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T05",
+   "note": {
+    "summary": "Meeting score 95/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 9,
+     "evidence_quote": "When you think about your counter on a busy day, what usually breaks first?"
+    },
+    "suggestions": [
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "What's changed most in your business over the last year?"
+     },
+     {
+      "title": "Recap the customer's words before you close",
+      "what_happened": "The close was solid; a short recap would make it stronger.",
+      "try_instead": "Try: 'So the two things that matter are staff time and break-even. Here's how we cover both.'",
+      "evidence_turn": 25,
+      "evidence_quote": "You'll have it within the hour."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "When you think about your counter on a busy day, what usually breaks first?",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "What's changed most in your business over the last year?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "You'll have it within the hour.",
+     "expected_speaker": null,
+     "claimed_turn": 25,
+     "found_turn": 25,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "When you think about your counter on a busy day, what usually breaks first?",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "What's changed most in your business over the last year?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "You'll have it within the hour.",
+     "expected_speaker": null,
+     "claimed_turn": 25,
+     "found_turn": 25,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T06",
+   "note": {
+    "summary": "Meeting score 89/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 13,
+     "evidence_quote": "When a customer asks you which monitor to buy, what do you tell them today?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 4,
+      "evidence_quote": "We can't compete on price there, so I stopped trying."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "How much of your business comes from the front store these days?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "When a customer asks you which monitor to buy, what do you tell them today?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "We can't compete on price there, so I stopped trying.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How much of your business comes from the front store these days?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "When a customer asks you which monitor to buy, what do you tell them today?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "We can't compete on price there, so I stopped trying.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How much of your business comes from the front store these days?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T07",
+   "note": {
+    "summary": "Meeting score 81/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 1,
+     "evidence_quote": "How are clinical services going at this store?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 2,
+      "evidence_quote": "Last season we did almost two thousand, which is a lot for a store our size."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 1,
+      "evidence_quote": "How are clinical services going at this store?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How are clinical services going at this store?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "Last season we did almost two thousand, which is a lot for a store our size.",
+     "expected_speaker": null,
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How are clinical services going at this store?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How are clinical services going at this store?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "Last season we did almost two thousand, which is a lot for a store our size.",
+     "expected_speaker": null,
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How are clinical services going at this store?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T08",
+   "note": {
+    "summary": "Meeting score 92/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 9,
+     "evidence_quote": "That's a reasonable doubt, and small towns are different."
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 6,
+      "evidence_quote": "I tell them to see a doctor, they tell me they can't get an appointment until next week, and they leave frustrated."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 1,
+      "evidence_quote": "How's it looking so far?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "That's a reasonable doubt, and small towns are different.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "I tell them to see a doctor, they tell me they can't get an appointment until next week, and they leave frustrated.",
+     "expected_speaker": null,
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How's it looking so far?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "That's a reasonable doubt, and small towns are different.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "I tell them to see a doctor, they tell me they can't get an appointment until next week, and they leave frustrated.",
+     "expected_speaker": null,
+     "claimed_turn": 6,
+     "found_turn": 6,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How's it looking so far?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T09",
+   "note": {
+    "summary": "Meeting score 62/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 1,
+     "evidence_quote": "Did you just redo the shelves?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 4,
+      "evidence_quote": "We already sell monitors, though."
+     },
+     {
+      "title": "Talk less, ask more",
+      "what_happened": "You talked 72% of the time.",
+      "try_instead": "Stop after one or two sentences and ask: 'How does that compare with what you do now?'",
+      "evidence_turn": 3,
+      "evidence_quote": "It's an upper-arm cuff, clinically validated, it stores readings for two people, and it retails at forty-four ninety-nine."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Did you just redo the shelves?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "We already sell monitors, though.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "It's an upper-arm cuff, clinically validated, it stores readings for two people, and it retails at forty-four ninety-nine.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Did you just redo the shelves?",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "We already sell monitors, though.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "It's an upper-arm cuff, clinically validated, it stores readings for two people, and it retails at forty-four ninety-nine.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T10",
+   "note": {
+    "summary": "Meeting score 53/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Handled an objection well",
+     "evidence_turn": 5,
+     "evidence_quote": "The good news is the test only takes a few minutes."
+    },
+    "suggestions": [
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 15,
+      "evidence_quote": "I'll follow up in a few weeks to see what he thinks."
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 3,
+      "evidence_quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream."
+     },
+     {
+      "title": "Talk less, ask more",
+      "what_happened": "You talked 72% of the time.",
+      "try_instead": "Stop after one or two sentences and ask: 'How does that compare with what you do now?'",
+      "evidence_turn": 3,
+      "evidence_quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "The good news is the test only takes a few minutes.",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "I'll follow up in a few weeks to see what he thinks.",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "The good news is the test only takes a few minutes.",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "I'll follow up in a few weeks to see what he thinks.",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "The kits cost about twelve dollars and most pharmacies charge thirty-five to forty, so it's a nice new revenue stream.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T11",
+   "note": {
+    "summary": "Meeting score 57/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 3,
+     "evidence_quote": "What kinds of patients do you see the most?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 4,
+      "evidence_quote": "There are three elementary schools within a mile of us, so in the fall it's nonstop sick kids and worried parents."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 17,
+      "evidence_quote": "I'll check back with you after the holidays, maybe, once things calm down?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What kinds of patients do you see the most?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "There are three elementary schools within a mile of us, so in the fall it's nonstop sick kids and worried parents.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll check back with you after the holidays, maybe, once things calm down?",
+     "expected_speaker": null,
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What kinds of patients do you see the most?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "There are three elementary schools within a mile of us, so in the fall it's nonstop sick kids and worried parents.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll check back with you after the holidays, maybe, once things calm down?",
+     "expected_speaker": null,
+     "claimed_turn": 17,
+     "found_turn": 17,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T12",
+   "note": {
+    "summary": "Meeting score 72/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 5,
+     "evidence_quote": "How do you handle blood pressure questions at the counter today?"
+    },
+    "suggestions": [
+     {
+      "title": "Talk less, ask more",
+      "what_happened": "You talked 64% of the time.",
+      "try_instead": "Stop after one or two sentences and ask: 'How does that compare with what you do now?'",
+      "evidence_turn": 3,
+      "evidence_quote": "It comes with a counter display that holds four, and a Know Your Numbers kit for a free check day."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 5,
+      "evidence_quote": "How do you handle blood pressure questions at the counter today?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How do you handle blood pressure questions at the counter today?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "It comes with a counter display that holds four, and a Know Your Numbers kit for a free check day.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How do you handle blood pressure questions at the counter today?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How do you handle blood pressure questions at the counter today?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "It comes with a counter display that holds four, and a Know Your Numbers kit for a free check day.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How do you handle blood pressure questions at the counter today?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T13",
+   "note": {
+    "summary": "Meeting score 20/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 7,
+     "evidence_quote": "Do you do any testing right now?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 2,
+      "evidence_quote": "My concern is staffing."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 11,
+      "evidence_quote": "I'll swing by in a couple of weeks and we can figure it out then."
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 1,
+      "evidence_quote": "Pharmacies that run it are seeing new patients walk in every week, and a lot of them transfer their prescriptions once they see what you can do."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you do any testing right now?",
+     "expected_speaker": null,
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "My concern is staffing.",
+     "expected_speaker": null,
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll swing by in a couple of weeks and we can figure it out then.",
+     "expected_speaker": null,
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "Pharmacies that run it are seeing new patients walk in every week, and a lot of them transfer their prescriptions once they see what you can do.",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you do any testing right now?",
+     "expected_speaker": null,
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "My concern is staffing.",
+     "expected_speaker": null,
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll swing by in a couple of weeks and we can figure it out then.",
+     "expected_speaker": null,
+     "claimed_turn": 11,
+     "found_turn": 11,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "Pharmacies that run it are seeing new patients walk in every week, and a lot of them transfer their prescriptions once they see what you can do.",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T14",
+   "note": {
+    "summary": "Meeting score 13/100. 3 things to work on.",
+    "keep_doing": null,
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 4,
+      "evidence_quote": "I doubt that would happen here."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 9,
+      "evidence_quote": "Here's my card and a sell sheet."
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 3,
+      "evidence_quote": "Retail is forty-four ninety-nine and your cost is twenty-two, so you're making twenty-three bucks a unit."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "suggestions[0]",
+     "quote": "I doubt that would happen here.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "Here's my card and a sell sheet.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "Retail is forty-four ninety-nine and your cost is twenty-two, so you're making twenty-three bucks a unit.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "suggestions[0]",
+     "quote": "I doubt that would happen here.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "Here's my card and a sell sheet.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "Retail is forty-four ninety-nine and your cost is twenty-two, so you're making twenty-three bucks a unit.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T15",
+   "note": {
+    "summary": "Meeting score 37/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 5,
+     "evidence_quote": "How many prescriptions are you filling a day?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 10,
+      "evidence_quote": "What happens if it breaks?"
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 15,
+      "evidence_quote": "I'll email you the info and touch base next month sometime."
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 1,
+      "evidence_quote": "You charge thirty-five to forty a test and the kits run about twelve, so it's pure margin after that."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How many prescriptions are you filling a day?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "What happens if it breaks?",
+     "expected_speaker": null,
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll email you the info and touch base next month sometime.",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "You charge thirty-five to forty a test and the kits run about twelve, so it's pure margin after that.",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How many prescriptions are you filling a day?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "What happens if it breaks?",
+     "expected_speaker": null,
+     "claimed_turn": 10,
+     "found_turn": 10,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll email you the info and touch base next month sometime.",
+     "expected_speaker": null,
+     "claimed_turn": 15,
+     "found_turn": 15,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "You charge thirty-five to forty a test and the kits run about twelve, so it's pure margin after that.",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T16",
+   "note": {
+    "summary": "Meeting score 23/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 5,
+     "evidence_quote": "What monitors are you carrying right now?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 2,
+      "evidence_quote": "Our front store is planned by corporate."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 9,
+      "evidence_quote": "I'll drop off some samples next time I'm in the area."
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 1,
+      "evidence_quote": "It retails at forty-four ninety-nine and your cost is twenty-two, so you're getting better margin than anything else in that aisle."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What monitors are you carrying right now?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "Our front store is planned by corporate.",
+     "expected_speaker": null,
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll drop off some samples next time I'm in the area.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "It retails at forty-four ninety-nine and your cost is twenty-two, so you're getting better margin than anything else in that aisle.",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "What monitors are you carrying right now?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "Our front store is planned by corporate.",
+     "expected_speaker": null,
+     "claimed_turn": 2,
+     "found_turn": 2,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll drop off some samples next time I'm in the area.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "It retails at forty-four ninety-nine and your cost is twenty-two, so you're getting better margin than anything else in that aisle.",
+     "expected_speaker": null,
+     "claimed_turn": 1,
+     "found_turn": 1,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T17",
+   "note": {
+    "summary": "Meeting score 24/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 5,
+     "evidence_quote": "Do you do any testing right now?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 8,
+      "evidence_quote": "The issue last time was liability."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 13,
+      "evidence_quote": "Well, here's a brochure with everything in it."
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 3,
+      "evidence_quote": "You can do strep, flu and COVID tests on one machine, and the results come back in about ten minutes."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you do any testing right now?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "The issue last time was liability.",
+     "expected_speaker": null,
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "Well, here's a brochure with everything in it.",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "You can do strep, flu and COVID tests on one machine, and the results come back in about ten minutes.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you do any testing right now?",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "The issue last time was liability.",
+     "expected_speaker": null,
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "Well, here's a brochure with everything in it.",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "You can do strep, flu and COVID tests on one machine, and the results come back in about ten minutes.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T18",
+   "note": {
+    "summary": "Meeting score 28/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 7,
+     "evidence_quote": "Do you sell more in certain months?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a unaddressed response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 4,
+      "evidence_quote": "We already carry two monitors, and honestly they don't sell much."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 13,
+      "evidence_quote": "I'll leave you a sell sheet, and maybe I can check back in a month or so?"
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 3,
+      "evidence_quote": "It retails for forty-four ninety-nine, and it costs you twenty-two dollars."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you sell more in certain months?",
+     "expected_speaker": null,
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "We already carry two monitors, and honestly they don't sell much.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll leave you a sell sheet, and maybe I can check back in a month or so?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "It retails for forty-four ninety-nine, and it costs you twenty-two dollars.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you sell more in certain months?",
+     "expected_speaker": null,
+     "claimed_turn": 7,
+     "found_turn": 7,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "We already carry two monitors, and honestly they don't sell much.",
+     "expected_speaker": null,
+     "claimed_turn": 4,
+     "found_turn": 4,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I'll leave you a sell sheet, and maybe I can check back in a month or so?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "It retails for forty-four ninety-nine, and it costs you twenty-two dollars.",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T19",
+   "note": {
+    "summary": "Meeting score 48/100. 3 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 3,
+     "evidence_quote": "Do you offer any clinical services right now?"
+    },
+    "suggestions": [
+     {
+      "title": "Slow down on objections",
+      "what_happened": "This concern got a weak response.",
+      "try_instead": "Acknowledge it, ask one question to understand it, answer with specifics, then check: 'That's fair. What would need to be true for this to work for you?'",
+      "evidence_turn": 8,
+      "evidence_quote": "And my bigger issue is time."
+     },
+     {
+      "title": "Close with a dated next step",
+      "what_happened": "The meeting ended without a specific, agreed time to follow up.",
+      "try_instead": "Propose a time: 'Can I come back Thursday at two to walk through the paperwork with you?'",
+      "evidence_turn": 13,
+      "evidence_quote": "I can send you some information, and maybe we can talk again sometime next month?"
+     },
+     {
+      "title": "Ask before you pitch",
+      "what_happened": "The pitch came before learning how the pharmacy works today.",
+      "try_instead": "Open with a question: 'What happens today when someone comes in asking for this?'",
+      "evidence_turn": 5,
+      "evidence_quote": "We help with the training and the CLIA waiver, and you can charge around thirty-five to forty dollars a test."
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you offer any clinical services right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "And my bigger issue is time.",
+     "expected_speaker": null,
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I can send you some information, and maybe we can talk again sometime next month?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "We help with the training and the CLIA waiver, and you can charge around thirty-five to forty dollars a test.",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "Do you offer any clinical services right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "And my bigger issue is time.",
+     "expected_speaker": null,
+     "claimed_turn": 8,
+     "found_turn": 8,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "I can send you some information, and maybe we can talk again sometime next month?",
+     "expected_speaker": null,
+     "claimed_turn": 13,
+     "found_turn": 13,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[2]",
+     "quote": "We help with the training and the CLIA waiver, and you can charge around thirty-five to forty dollars a test.",
+     "expected_speaker": null,
+     "claimed_turn": 5,
+     "found_turn": 5,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  },
+  {
+   "transcript_id": "T20",
+   "note": {
+    "summary": "Meeting score 71/100. 2 things to work on.",
+    "keep_doing": {
+     "title": "Asked a discovery question",
+     "evidence_turn": 3,
+     "evidence_quote": "How are blood pressure monitors doing for you right now?"
+    },
+    "suggestions": [
+     {
+      "title": "Talk less, ask more",
+      "what_happened": "You talked 66% of the time.",
+      "try_instead": "Stop after one or two sentences and ask: 'How does that compare with what you do now?'",
+      "evidence_turn": 9,
+      "evidence_quote": "It retails at forty-four ninety-nine, so it's fifteen dollars less than what you have, and your cost is twenty-two."
+     },
+     {
+      "title": "Follow a situation question with an impact question",
+      "what_happened": "A good question about how things work today; the cost of the problem stayed implicit.",
+      "try_instead": "Follow up with: 'And what does that cost you when it happens?'",
+      "evidence_turn": 3,
+      "evidence_quote": "How are blood pressure monitors doing for you right now?"
+     }
+    ]
+   },
+   "first_pass_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How are blood pressure monitors doing for you right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "It retails at forty-four ninety-nine, so it's fifteen dollars less than what you have, and your cost is twenty-two.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How are blood pressure monitors doing for you right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "final_checks": [
+    {
+     "where": "keep_doing",
+     "quote": "How are blood pressure monitors doing for you right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[0]",
+     "quote": "It retails at forty-four ninety-nine, so it's fifteen dollars less than what you have, and your cost is twenty-two.",
+     "expected_speaker": null,
+     "claimed_turn": 9,
+     "found_turn": 9,
+     "status": "ok",
+     "similarity": null
+    },
+    {
+     "where": "suggestions[1]",
+     "quote": "How are blood pressure monitors doing for you right now?",
+     "expected_speaker": null,
+     "claimed_turn": 3,
+     "found_turn": 3,
+     "status": "ok",
+     "similarity": null
+    }
+   ],
+   "repaired": false,
+   "dropped": 0
+  }
+ ]
+}

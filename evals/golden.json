@@ -1,0 +1,106 @@
+{
+  "about": {
+    "synthetic": true,
+    "description": "Hand labels for 10 of the 20 synthetic transcripts (2 per rep). Turn numbers are 1-based and refer to data/transcripts/<id>.txt.",
+    "rubric": "Same rubric the analysis prompt uses (fieldcoach/prompts/analysis.md): discovery questions are labeled per rep turn; each objection once, at the customer turn where it first comes up; handling judged on everything the rep says in response.",
+    "labels": {
+      "discovery_turns": "rep turns that contain at least one discovery question",
+      "objections": "customer turn, category, handling (strong | adequate | weak | unaddressed)",
+      "next_step": "clear | vague | none"
+    },
+    "caveat": "Labels were written together with the synthetic transcripts by a single annotator. Treat the numbers as a regression signal, not a benchmark."
+  },
+  "transcripts": {
+    "T01": {
+      "discovery_turns": [3, 5, 7, 9, 13, 17, 19, 23],
+      "objections": [
+        {"turn": 12, "category": "workflow_staffing", "handling": "strong"},
+        {"turn": 18, "category": "cost_margin", "handling": "strong"}
+      ],
+      "next_step": "clear",
+      "notes": "Turns 15 and 21 end with checks ('Would afternoon-only testing work for you?', 'Does that change the picture?'), not discovery. Both objections get acknowledge, clarify, specifics and a check."
+    },
+    "T03": {
+      "discovery_turns": [3, 5, 7, 9, 15, 17],
+      "objections": [
+        {"turn": 12, "category": "regulatory_liability", "handling": "adequate"},
+        {"turn": 16, "category": "incumbent_competitor", "handling": "strong"}
+      ],
+      "next_step": "clear",
+      "notes": "Turn 13 answers the liability concern with specifics but no acknowledgment, question or check, so adequate. The failed cholesterol program (turns 6-8) is history, not an objection."
+    },
+    "T05": {
+      "discovery_turns": [3, 5, 7, 9, 13, 15, 19],
+      "objections": [
+        {"turn": 12, "category": "cost_margin", "handling": "strong"},
+        {"turn": 20, "category": "inventory_space", "handling": "strong"}
+      ],
+      "next_step": "clear",
+      "notes": "Turn 2 ('heard a lot of pitches') has no concrete concern. Turn 8 states buying criteria before any pitch, so not an objection."
+    },
+    "T07": {
+      "discovery_turns": [1, 3, 5, 7, 11, 13],
+      "objections": [
+        {"turn": 6, "category": "workflow_staffing", "handling": "strong"},
+        {"turn": 16, "category": "regulatory_liability", "handling": "adequate"}
+      ],
+      "next_step": "clear",
+      "notes": "Turn 17 gives specifics and a check but no acknowledgment or clarifying question, so adequate."
+    },
+    "T09": {
+      "discovery_turns": [5, 7, 17],
+      "objections": [
+        {"turn": 4, "category": "incumbent_competitor", "handling": "adequate"},
+        {"turn": 10, "category": "inventory_space", "handling": "adequate"},
+        {"turn": 14, "category": "cost_margin", "handling": "adequate"}
+      ],
+      "next_step": "clear",
+      "notes": "Turn 1 is small talk. Turn 12 ('What's the minimum order?') is a neutral question. Turn 14 is about losing a wholesaler rebate, so cost_margin."
+    },
+    "T11": {
+      "discovery_turns": [3, 5, 7, 13],
+      "objections": [
+        {"turn": 10, "category": "workflow_staffing", "handling": "weak"},
+        {"turn": 14, "category": "cost_margin", "handling": "adequate"}
+      ],
+      "next_step": "vague",
+      "notes": "Turn 12 repeats the swabbing concern, so it is not a new objection. 'After the holidays, maybe' has no firm time."
+    },
+    "T13": {
+      "discovery_turns": [7],
+      "objections": [
+        {"turn": 2, "category": "workflow_staffing", "handling": "weak"},
+        {"turn": 6, "category": "regulatory_liability", "handling": "weak"}
+      ],
+      "next_step": "vague",
+      "notes": "Turn 10 brings staffing back up; same concern as turn 2, not listed again."
+    },
+    "T15": {
+      "discovery_turns": [5, 13],
+      "objections": [
+        {"turn": 2, "category": "demand_need", "handling": "weak"},
+        {"turn": 8, "category": "cost_margin", "handling": "adequate"},
+        {"turn": 10, "category": "other", "handling": "weak"}
+      ],
+      "next_step": "vague",
+      "notes": "Turn 10 ('What happens if it breaks?') is a worry about equipment, so other. Turn 12 ('not ready to commit') gives no reason."
+    },
+    "T17": {
+      "discovery_turns": [5, 11],
+      "objections": [
+        {"turn": 8, "category": "regulatory_liability", "handling": "unaddressed"}
+      ],
+      "next_step": "none",
+      "notes": "Turn 9 changes the subject to window signage, so the liability concern is unaddressed. 'My email's on the back' is not a next step."
+    },
+    "T19": {
+      "discovery_turns": [3, 9],
+      "objections": [
+        {"turn": 6, "category": "regulatory_liability", "handling": "unaddressed"},
+        {"turn": 8, "category": "workflow_staffing", "handling": "weak"}
+      ],
+      "next_step": "vague",
+      "notes": "Turn 7 ignores the CLIA worry and talks about kit price. Turn 12 is a brush-off without a new concern."
+    }
+  }
+}
